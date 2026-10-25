@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cleanzen Quote Request</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #F3F7FA; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1E2D3D;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #F3F7FA; padding: 30px 10px;">
+    <tr>
+      <td align="center">
+        <!-- Main Card Container -->
+        <table role="presentation" width="100%" max-width="600" cellspacing="0" cellpadding="0" border="0" style="max-width: 600px; background-color: #FFFFFF; border-radius: 16px; overflow: hidden; border: 1px solid #D6E6F2; box-shadow: 0 10px 30px rgba(30, 58, 95, 0.08);">
+          
+          <!-- Header Banner -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #1E3A5F 0%, #2A4D7A 100%); padding: 35px 30px; text-align: center;">
+              <h1 style="margin: 0; color: #FFFFFF; font-family: Georgia, serif; font-size: 32px; letter-spacing: 1px;">Cleanzen</h1>
+              <p style="margin: 6px 0 0 0; color: #B8D5E5; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600;">Clean Space, Calm Mind &bull; Perth, WA</p>
+              <div style="display: inline-block; margin-top: 15px; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 20px; padding: 6px 16px; color: #FFFFFF; font-size: 13px; font-weight: 600;">
+                ✦ New Quote &amp; Date Request
+              </div>
+            </td>
+          </tr>
+
+          <!-- Estimated Price Callout -->
+          <tr>
+            <td style="padding: 25px 30px 10px 30px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #EBF4FA; border-radius: 12px; border: 1px solid #C4DDEE; text-align: center; padding: 18px;">
+                <tr>
+                  <td>
+                    <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #647B91; font-weight: 700;">Calculated Quote Estimate</div>
+                    <div style="font-size: 32px; font-weight: 700; color: #1E3A5F; font-family: Georgia, serif; margin: 4px 0;">{{estimated_price}}</div>
+                    <div style="font-size: 12px; color: #647B91;">Australian Dollars (AUD) &bull; No upfront deposit taken</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Client Details Section -->
+          <tr>
+            <td style="padding: 20px 30px;">
+              <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #1E3A5F; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #EBF1F6; padding-bottom: 8px;">
+                👤 Client Information
+              </h3>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="6" border="0" style="font-size: 14px;">
+                <tr>
+                  <td width="35%" style="color: #647B91; font-weight: 600;">Full Name:</td>
+                  <td width="65%" style="color: #1E2D3D; font-weight: 700;">{{client_name}}</td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600;">Phone Number:</td>
+                  <td>
+                    <a href="tel:{{client_phone}}" style="color: #1E3A5F; font-weight: 700; text-decoration: none;">
+                      {{client_phone}}
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600;">Email Address:</td>
+                  <td>
+                    <a href="mailto:{{client_email}}" style="color: #6B9AC4; text-decoration: none;">
+                      {{client_email}}
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600;">Suburb (Perth):</td>
+                  <td style="color: #1E2D3D; font-weight: 700;">📍 {{client_suburb}}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Service Breakdown Section -->
+          <tr>
+            <td style="padding: 10px 30px 20px 30px;">
+              <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #1E3A5F; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #EBF1F6; padding-bottom: 8px;">
+                🧹 Service Configuration
+              </h3>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="6" border="0" style="font-size: 14px;">
+                <tr>
+                  <td width="35%" style="color: #647B91; font-weight: 600;">Service Type:</td>
+                  <td width="65%" style="color: #1E3A5F; font-weight: 700; text-transform: uppercase;">{{service_type}}</td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600;">Home Size:</td>
+                  <td style="color: #1E2D3D;">{{bedrooms}} Bedrooms &bull; {{bathrooms}} Bathrooms</td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600;">Frequency:</td>
+                  <td style="color: #1E2D3D; text-transform: capitalize; font-weight: 600;">{{frequency}}</td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600;">Extras / Add-ons:</td>
+                  <td style="color: #1E2D3D;">{{extras}}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Scheduling Preference Section -->
+          <tr>
+            <td style="padding: 10px 30px 20px 30px;">
+              <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #1E3A5F; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #EBF1F6; padding-bottom: 8px;">
+                🗓️ Preferred Schedule (Perth Route)
+              </h3>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="6" border="0" style="font-size: 14px;">
+                <tr>
+                  <td width="35%" style="color: #647B91; font-weight: 600;">Preferred Date:</td>
+                  <td width="65%" style="color: #1E3A5F; font-weight: 700;">{{preferred_date}}</td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600;">Time Window:</td>
+                  <td style="color: #1E2D3D; text-transform: capitalize; font-weight: 600;">
+                    ⏰ {{preferred_time_slot}}
+                  </td>
+                </tr>
+                <tr>
+                  <td style="color: #647B91; font-weight: 600; vertical-align: top;">Client Notes:</td>
+                  <td style="color: #3E5268; background-color: #F3F7FA; padding: 10px; border-radius: 8px; font-style: italic;">
+                    {{notes}}
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Quick Action Buttons -->
+          <tr>
+            <td align="center" style="padding: 20px 30px 35px 30px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td style="border-radius: 25px; background: #1E3A5F;">
+                    <a href="tel:{{client_phone}}" style="font-size: 14px; font-weight: 700; color: #FFFFFF; text-decoration: none; padding: 12px 24px; display: inline-block;">
+                      📞 Call {{client_name}}
+                    </a>
+                  </td>
+                  <td width="15"></td>
+                  <td style="border-radius: 25px; background: #6B9AC4;">
+                    <a href="mailto:{{client_email}}" style="font-size: 14px; font-weight: 700; color: #FFFFFF; text-decoration: none; padding: 12px 24px; display: inline-block;">
+                      ✉️ Reply to Email
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #F3F7FA; border-top: 1px solid #EBF1F6; padding: 20px 30px; text-align: center; font-size: 12px; color: #647B91;">
+              Cleanzen &bull; Natasha &amp; Laura &bull; Perth, Western Australia<br>
+              Direct contact: 0421 081 962 &bull; cleanzen.info@gmail.com
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

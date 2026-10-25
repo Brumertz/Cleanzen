@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Cleanzen | Clean Space, Calm Mind — Perth Residential & Vacate Cleaning</title>
+  <meta name="description"
+    content="Mindful, meticulous domestic and vacate cleaning in Perth, Western Australia. Operated by Natasha & Laura. Instant online quote estimator, police-checked, 100% bond guarantee.">
+  <meta name="keywords"
+    content="Perth cleaning services, vacate clean Perth, bond cleaning, domestic cleaner Perth, fortnightly home cleaning, Cleanzen">
+  <meta name="author" content="Cleanzen — Natasha & Laura">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:title" content="Cleanzen | Clean Space, Calm Mind — Perth Cleaners">
+  <meta property="og:description"
+    content="Boutique domestic and vacate cleaning across Perth, WA. Instant price estimate and flexible scheduling.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/cleanzen-sanctuary.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/cleanzen-icon.svg">
+
+  <!-- Google Web Fonts (Playfair Display & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Design Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- EmailJS SDK (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       Top Notification & Announcement Bar
+       ========================================================================= -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 0.6rem;">
+        <span class="announcement-tag">PERTH, WA</span>
+        <span>Serving Greater Perth, Coastal &amp; Western Suburbs</span>
+      </div>
+      <div>
+        <span>Call or SMS Natasha &amp; Laura: </span>
+        <a href="tel:0421081962" class="announcement-phone">
+          <strong>0421 081 962</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Main Navigation Bar (Glassmorphic)
+       ========================================================================= -->
+  <header class="main-header" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo-link" aria-label="Cleanzen Home">
+        <img src="assets/cleanzen-logo-horizontal.svg" alt="Cleanzen Perth" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="mainNavLinks">
+          <li><a href="#estimator" class="nav-link">Instant Estimator</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#suburbs" class="nav-link">Suburbs</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action CTAs -->
+      <div class="nav-actions">
+        <a href="tel:0421081962" class="phone-quick-link" aria-label="Call Cleanzen">
+          <span>📞</span>
+          <span>0421 081 962</span>
+        </a>
+        <a href="#estimator" class="btn btn-zen btn-sm">Get an Estimate</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- =======================================================================
+         Hero Section ("Clean Space, Calm Mind")
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-text-content">
+            <div class="hero-pill">
+              <span>✦</span>
+              <span>Mindful Domestic &amp; Vacate Care in Perth</span>
+            </div>
+            <h1 class="hero-title">
+              Clean Space,<br>
+              <span>Calm Mind.</span>
+            </h1>
+            <p class="hero-description">
+              Experience the tranquility of a spotless home. Owned and operated by <strong>Natasha &amp; Laura</strong>,
+              Cleanzen brings meticulous, eco-conscious cleaning and soothing peace of mind to residences across Perth,
+              Western Australia.
+            </p>
+            <div class="hero-ctas">
+              <a href="#estimator" class="btn btn-primary btn-lg">Calculate Your Quote</a>
+              <a href="tel:0421081962" class="btn btn-outline btn-lg">Call 0421 081 962</a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="hero-trust-row">
+              <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                <span>Police Cleared &amp; Insured</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                <span>100% Bond Guarantee</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon">✓</span>
+                <span>Eco-Friendly Supplies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Visual Showcase -->
+          <div class="hero-visual-card">
+            <div class="hero-image-wrapper">
+              <img src="assets/cleanzen-sanctuary.jpg"
+                alt="Pristine, sunlit Perth living room with peaceful zen atmosphere">
+            </div>
+
+            <!-- Floating Trust Badge Top -->
+            <div class="hero-floating-badge floating-badge-top">
+              <div class="badge-icon-box">✦</div>
+              <div>
+                <span class="badge-text-primary">Perth's Zen Cleaning</span>
+                <span class="badge-text-secondary">Weekly • Fortnightly • Vacate</span>
+              </div>
+            </div>
+
+            <!-- Floating Trust Badge Bottom -->
+            <div class="hero-floating-badge floating-badge-bottom">
+              <div class="badge-icon-box">★</div>
+              <div>
+                <span class="badge-text-primary">5.0 Star Rating</span>
+                <span class="badge-text-secondary">Trusted by Perth Homeowners</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zen Wave Separator -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,50 L1200,120 L0,120 Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <!-- =======================================================================
+         Instant Quote Estimator (Propuesta A — Serene Water & Glass)
+         ======================================================================= -->
+    <section class="estimator-section" id="estimator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Instant Cost Calculator</span>
+          <h2 class="section-title">Transparent Price Estimator</h2>
+          <p class="section-subtitle">
+            Configure your home details below for an immediate, honest estimate in Australian Dollars (AUD). No card
+            required, no surprises.
+          </p>
+        </div>
+
+        <div class="estimator-card">
+          <!-- Left: User Selections -->
+          <div class="estimator-inputs">
+            <!-- 1. Number of Bedrooms -->
+            <div class="estimator-group">
+              <label class="estimator-label">1. How many bedrooms?</label>
+              <div class="estimator-pills-row" role="radiogroup" aria-label="Bedrooms selection">
+                <button type="button" class="pill-option" data-bedrooms="1">1 Bed</button>
+                <button type="button" class="pill-option active" data-bedrooms="2">2 Bed</button>
+                <button type="button" class="pill-option" data-bedrooms="3">3 Bed</button>
+                <button type="button" class="pill-option" data-bedrooms="4">4 Bed</button>
+                <button type="button" class="pill-option" data-bedrooms="5">5+ Bed</button>
+              </div>
+            </div>
+
+            <!-- 2. Number of Bathrooms -->
+            <div class="estimator-group">
+              <label class="estimator-label">2. How many bathrooms?</label>
+              <div class="estimator-pills-row" role="radiogroup" aria-label="Bathrooms selection">
+                <button type="button" class="pill-option" data-bathrooms="1">1 Bath</button>
+                <button type="button" class="pill-option active" data-bathrooms="2">2 Bath</button>
+                <button type="button" class="pill-option" data-bathrooms="3">3 Bath</button>
+                <button type="button" class="pill-option" data-bathrooms="4">4+ Bath</button>
+              </div>
+            </div>
+
+            <!-- 3. Service Type -->
+            <div class="estimator-group">
+              <label class="estimator-label">3. Select cleaning depth</label>
+              <div class="service-type-grid" role="radiogroup" aria-label="Cleaning depth selection">
+                <div class="service-card-radio active" data-service="general">
+                  <div class="service-radio-title">General Clean</div>
+                  <div class="service-radio-desc">Routine upkeep &amp; sanctuary maintenance</div>
+                </div>
+                <div class="service-card-radio" data-service="deep">
+                  <div class="service-radio-title">Deep Clean</div>
+                  <div class="service-radio-desc">Skirting boards, details &amp; deep grease</div>
+                </div>
+                <div class="service-card-radio" data-service="vacate">
+                  <div class="service-radio-title">Vacate / Bond</div>
+                  <div class="service-radio-desc">100% Inspection standard for real estates</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Frequency & Savings -->
+            <div class="estimator-group">
+              <label class="estimator-label">4. Cleaning frequency</label>
+              <div class="frequency-grid" role="radiogroup" aria-label="Frequency selection">
+                <div class="freq-option" data-frequency="one-off">
+                  <div>One-Off</div>
+                </div>
+                <div class="freq-option" data-frequency="monthly">
+                  <span class="freq-badge">-5%</span>
+                  <div>Monthly</div>
+                </div>
+                <div class="freq-option active" data-frequency="fortnightly">
+                  <span class="freq-badge">-10%</span>
+                  <div>Fortnightly</div>
+                </div>
+                <div class="freq-option" data-frequency="weekly">
+                  <span class="freq-badge">-15%</span>
+                  <div>Weekly</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Optional Extras -->
+            <div class="estimator-group" style="margin-bottom: 0;">
+              <label class="estimator-label">5. Optional extras &amp; add-ons</label>
+              <div class="extras-grid">
+                <div class="extra-toggle" data-extra="windows">
+                  <input type="checkbox" class="extra-checkbox" aria-label="Window Cleaning">
+                  <div class="extra-info">
+                    <span class="extra-name">Window Cleaning (Glass &amp; Tracks)</span>
+                    <span class="extra-price">+$45 AUD</span>
+                  </div>
+                </div>
+                <div class="extra-toggle" data-extra="oven">
+                  <input type="checkbox" class="extra-checkbox" aria-label="Inside Oven Cleaning">
+                  <div class="extra-info">
+                    <span class="extra-name">Inside Oven Deep Clean</span>
+                    <span class="extra-price">+$50 AUD</span>
+                  </div>
+                </div>
+                <div class="extra-toggle" data-extra="balcony">
+                  <input type="checkbox" class="extra-checkbox" aria-label="Balcony or Patio Clean">
+                  <div class="extra-info">
+                    <span class="extra-name">Balcony / Patio Sweep &amp; Wipe</span>
+                    <span class="extra-price">+$35 AUD</span>
+                  </div>
+                </div>
+                <div class="extra-toggle" data-extra="carpet">
+                  <input type="checkbox" class="extra-checkbox" aria-label="Carpet Steam Refresh">
+                  <div class="extra-info">
+                    <span class="extra-name">Carpet Steam Refresh</span>
+                    <span class="extra-price">+$60 AUD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Reactive Output Sidebar -->
+          <div class="estimator-summary">
+            <div>
+              <span class="summary-header-badge">Calculated Estimate</span>
+              <h3 class="summary-title">Your Cleanzen Estimate</h3>
+
+              <div class="price-display-box">
+                <div class="price-currency">Estimated Total (AUD)</div>
+                <div class="price-range-text" id="estimatePriceRange">$145 – $175</div>
+                <div class="price-period">per clean • GST inclusive</div>
+              </div>
+
+              <div class="summary-details-list">
+                <div class="summary-detail-row">
+                  <span>Selected Service:</span>
+                  <strong id="summaryServiceType">General Clean</strong>
+                </div>
+                <div class="summary-detail-row">
+                  <span>Frequency:</span>
+                  <strong id="summaryFrequency">Fortnightly Clean (-10%)</strong>
+                </div>
+                <div class="summary-detail-row">
+                  <span>Home Size:</span>
+                  <strong id="summaryRooms">2 Bed, 2 Bath</strong>
+                </div>
+                <div class="summary-detail-row">
+                  <span>Estimated Duration:</span>
+                  <strong id="estimateHours">2.5 – 3.5 hours</strong>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <button type="button" class="btn btn-zen btn-lg" id="lockInEstimateBtn" style="width: 100%;">
+                Lock In This Estimate &rarr;
+              </button>
+              <p class="summary-disclaimer">
+                *Estimates reflect typical Perth residential homes. Exact final quote is confirmed by Natasha &amp;
+                Laura before commencement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Core Services Grid
+         ======================================================================= -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">Our Services &amp; Extras</h2>
+          <p class="section-subtitle">
+            Tailored care for homes across Perth. From routine tranquility to high-stakes vacate handovers.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: General Clean -->
+          <article class="service-card">
+            <div>
+              <div class="service-card-icon">🧹</div>
+              <h3 class="service-card-title">General Clean</h3>
+              <p class="service-card-desc">
+                Weekly, fortnightly, or monthly maintenance to keep your home continuously serene and effortlessly
+                fresh.
+              </p>
+              <ul class="service-feature-list">
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Complete dust, vacuum &amp; mop
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Full kitchen surfaces &amp; stovetop
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Deep bathroom sanitation &amp; mirrors
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Bin emptying &amp; fresh linen tidy
+                </li>
+              </ul>
+            </div>
+            <a href="#estimator" class="btn btn-outline btn-sm">Estimate General Clean</a>
+          </article>
+
+          <!-- Service 2: Deep Clean -->
+          <article class="service-card">
+            <div>
+              <div class="service-card-icon">✨</div>
+              <h3 class="service-card-title">Deep Clean</h3>
+              <p class="service-card-desc">
+                An intensive top-to-bottom reset for homes needing seasonal revitalization, post-renovation care, or
+                deep refreshment.
+              </p>
+              <ul class="service-feature-list">
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Detailed skirting boards &amp; door frames
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Behind &amp; underneath furniture care
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Tile grout scrubbing &amp; scale removal
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Light switches, handles &amp; vents
+                </li>
+              </ul>
+            </div>
+            <a href="#estimator" class="btn btn-outline btn-sm">Estimate Deep Clean</a>
+          </article>
+
+          <!-- Service 3: Moving In / Out (Vacate Clean) -->
+          <article class="service-card">
+            <div>
+              <div class="service-card-icon">🔑</div>
+              <h3 class="service-card-title">Vacate / Bond Clean</h3>
+              <p class="service-card-desc">
+                Stress-free moving clean tailored to strict Western Australian Real Estate Property Management
+                checklists.
+              </p>
+              <ul class="service-feature-list">
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> 100% Bond-back inspection standard
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Inside cupboards &amp; built-in robes
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Rangehood filter &amp; oven degreasing
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Wall mark spot cleaning &amp; tracks
+                </li>
+              </ul>
+            </div>
+            <a href="#estimator" class="btn btn-outline btn-sm">Estimate Vacate Clean</a>
+          </article>
+
+          <!-- Service 4: Window Cleaning -->
+          <article class="service-card">
+            <div>
+              <div class="service-card-icon">🪟</div>
+              <h3 class="service-card-title">Window Cleaning</h3>
+              <p class="service-card-desc">
+                Crystal clear glass surfaces allowing Perth's warm coastal sunlight to fill your rooms with pristine
+                clarity.
+              </p>
+              <ul class="service-feature-list">
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Interior &amp; exterior glass panes
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Squeegee streak-free finish
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Window tracks &amp; sill detailing
+                </li>
+                <li class="service-feature-item">
+                  <span class="service-check-icon">✓</span> Flyscreen washing
+                </li>
+              </ul>
+            </div>
+            <a href="#estimator" class="btn btn-outline btn-sm">Add to Clean</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         About Cleanzen & Meet Natasha & Laura
+         ======================================================================= -->
+    <section class="story-section" id="about">
+      <div class="container">
+        <div class="story-grid">
+          <!-- Card Graphic -->
+          <div class="story-card-graphic">
+            <img src="assets/cleanzen-logo-full.svg" alt="Cleanzen Official Brand Card">
+            <div class="story-badge-quote">
+              <p>"We treat your home like our own sanctuary. When we leave, you feel an immediate sense of calm and
+                clarity."</p>
+              <span>— Natasha &amp; Laura, Co-Founders</span>
+            </div>
+          </div>
+
+          <!-- Story Content -->
+          <div class="story-content">
+            <span class="section-tag">Perth Owned &amp; Operated</span>
+            <h2>Mindful Home Care in Perth, Western Australia</h2>
+            <p class="story-lead">
+              Founded on the belief that a serene space creates mental peace, Cleanzen was created to bring calm back
+              into busy Perth lifestyles.
+            </p>
+            <p class="story-text">
+              Between busy careers, FIFO rotations, family commitments, and enjoying WA's beaches, cleaning can easily
+              become an exhausting chore. Natasha and Laura provide dependable, punctual, and discrete service using
+              high-grade, family-safe products.
+            </p>
+
+            <div class="pillars-row">
+              <div class="pillar-item">
+                <div class="pillar-bullet">1</div>
+                <div>
+                  <h4>Consistent Cleaners</h4>
+                  <p>You always know who is entering your home. Personal accountability you can trust.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-bullet">2</div>
+                <div>
+                  <h4>Mindful Products</h4>
+                  <p>Non-toxic, allergen-safe solutions that leave a fresh, tranquil botanical scent.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-bullet">3</div>
+                <div>
+                  <h4>Zero Micromanagement</h4>
+                  <p>We arrive on time, execute our thorough checklist, and leave your home spotless.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-bullet">4</div>
+                <div>
+                  <h4>Clear Communication</h4>
+                  <p>Simple scheduling, transparent quotes, and quick responses via call or SMS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Suburbs We Serve in Perth
+         ======================================================================= -->
+    <section class="suburbs-section" id="suburbs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Service Coverage</span>
+          <h2 class="section-title">Serving Greater Perth, WA</h2>
+          <p class="section-subtitle">
+            Reliable residential cleaning across the metropolitan area, coastal strip, and western suburbs:
+          </p>
+        </div>
+
+        <div class="suburbs-pills-wrap">
+          <span class="suburb-tag">Perth CBD</span>
+          <span class="suburb-tag">South Perth</span>
+          <span class="suburb-tag">Fremantle</span>
+          <span class="suburb-tag">Cottesloe</span>
+          <span class="suburb-tag">Scarborough</span>
+          <span class="suburb-tag">Subiaco</span>
+          <span class="suburb-tag">Claremont</span>
+          <span class="suburb-tag">Mount Lawley</span>
+          <span class="suburb-tag">Victoria Park</span>
+          <span class="suburb-tag">Applecross</span>
+          <span class="suburb-tag">Joondalup</span>
+          <span class="suburb-tag">Nedlands</span>
+          <span class="suburb-tag">Leederville</span>
+          <span class="suburb-tag">Northbridge</span>
+          <span class="suburb-tag">Como</span>
+          <span class="suburb-tag">Floreat</span>
+          <span class="suburb-tag">City Beach</span>
+          <span class="suburb-tag">East Perth</span>
+        </div>
+
+        <p style="font-size: 0.92rem; color: var(--color-text-muted);">
+          Don't see your suburb? Call Natasha &amp; Laura at <a href="tel:0421081962"
+            style="color: var(--color-deep-navy); font-weight: 700;">0421 081 962</a> to confirm our daily route.
+        </p>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Reviews & Testimonials
+         ======================================================================= -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Client Experiences</span>
+          <h2 class="section-title">What Our Perth Clients Say</h2>
+          <p class="section-subtitle">
+            Real feedback from homeowners, tenants, and families experiencing the Cleanzen difference.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="review-quote">
+              "Coming home on Thursdays after Natasha and Laura have visited is the best part of our week. The house
+              smells wonderful, the kitchen shines, and the calm atmosphere is palpable."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">SC</div>
+              <div>
+                <div class="reviewer-name">Sarah C.</div>
+                <div class="reviewer-location">South Perth • Fortnightly Clean</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="review-quote">
+              "We booked Cleanzen for our vacate clean in Cottesloe. The property manager did the inspection the next
+              morning and released our full bond immediately without a single remark. Flawless work."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">MR</div>
+              <div>
+                <div class="reviewer-name">Mark R.</div>
+                <div class="reviewer-location">Cottesloe • Vacate / Bond Clean</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="review-quote">
+              "As a FIFO worker, having a trustworthy team who keep my apartment immaculate while I am away on swing is
+              invaluable. Natasha & Laura are communicative, punctual, and respectful."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">DL</div>
+              <div>
+                <div class="reviewer-name">David L.</div>
+                <div class="reviewer-location">Scarborough • Monthly Maintenance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Booking Request & Hybrid Scheduling (Option 3 with EmailJS)
+         ======================================================================= -->
+    <section class="booking-section" id="booking">
+      <div class="container">
+        <div class="booking-wrapper">
+          <!-- Left: Direct Info Pane -->
+          <div class="booking-info-pane">
+            <div>
+              <span class="section-tag" style="background: rgba(255, 255, 255, 0.15); color: #FFFFFF;">Bookings &amp;
+                Inquiries</span>
+              <h3>Request Your Preferred Date</h3>
+              <p>
+                Fill out the form with your preferred date and time slot. We review our Perth route and confirm your
+                appointment within 2 hours.
+              </p>
+
+              <div class="contact-direct-list">
+                <div class="contact-direct-item">
+                  <div class="contact-icon-box">📞</div>
+                  <div>
+                    <span class="contact-label">Phone / SMS</span>
+                    <a href="tel:0421081962" class="contact-val">0421 081 962</a>
+                  </div>
+                </div>
+                <div class="contact-direct-item">
+                  <div class="contact-icon-box">✉️</div>
+                  <div>
+                    <span class="contact-label">Email Inquiries</span>
+                    <a href="mailto:cleanzen.info@gmail.com" class="contact-val">cleanzen.info@gmail.com</a>
+                  </div>
+                </div>
+                <div class="contact-direct-item">
+                  <div class="contact-icon-box">📍</div>
+                  <div>
+                    <span class="contact-label">Location</span>
+                    <span class="contact-val">Perth, Western Australia</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 0;">
+                🔒 No upfront payments. You only pay after your clean is completed to your satisfaction.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Hybrid Booking Form -->
+          <div class="booking-form-pane">
+            <!-- Dynamic Quote Summary Banner -->
+            <div class="form-estimate-banner">
+              <div class="banner-left">
+                <span>Calculated Estimate:</span>
+                <strong id="formBannerDetails">2 Bed, 2 Bath • GENERAL • FORTNIGHTLY</strong>
+              </div>
+              <div class="banner-price" id="formBannerPrice">$145 – $175 AUD</div>
+            </div>
+
+            <form id="cleanzenBookingForm">
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="clientName">Your Full Name *</label>
+                  <input type="text" id="clientName" required placeholder="e.g. Jessica Miller">
+                </div>
+                <div class="form-field">
+                  <label for="clientPhone">Mobile Phone *</label>
+                  <input type="tel" id="clientPhone" required placeholder="04xx xxx xxx">
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="clientEmail">Email Address *</label>
+                  <input type="email" id="clientEmail" required placeholder="jessica@example.com">
+                </div>
+                <div class="form-field">
+                  <label for="clientSuburb">Your Suburb in Perth *</label>
+                  <input type="text" id="clientSuburb" required placeholder="e.g. South Perth, Cottesloe, Scarborough">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="bookingDate">Preferred Date *</label>
+                <input type="date" id="bookingDate" required>
+              </div>
+
+              <!-- Time Slot Radio Selection (Hybrid Option 3) -->
+              <div class="form-field">
+                <label>Preferred Time Slot *</label>
+                <div class="time-slot-grid" role="radiogroup" aria-label="Preferred time slot">
+                  <div class="slot-radio active" data-slot="morning">
+                    <div class="slot-title">Morning</div>
+                    <div class="slot-hours">8:00 AM – 12:00 PM</div>
+                  </div>
+                  <div class="slot-radio" data-slot="afternoon">
+                    <div class="slot-title">Afternoon</div>
+                    <div class="slot-hours">1:00 PM – 5:00 PM</div>
+                  </div>
+                  <div class="slot-radio" data-slot="flexible">
+                    <div class="slot-title">Flexible</div>
+                    <div class="slot-hours">Any time fits</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="clientNotes">Special Requests / Access Notes (Optional)</label>
+                <textarea id="clientNotes" rows="3"
+                  placeholder="e.g. Key in lockbox, pets at home, focus on kitchen floor, etc."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-zen btn-lg" id="submitBookingBtn" style="width: 100%;">
+                Send Quote &amp; Date Request
+              </button>
+
+              <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Frequently Asked Questions (FAQ)
+         ======================================================================= -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about our cleaning practices, supplies, and booking policies in Perth.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you bring your own cleaning supplies and equipment?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, absolutely! We bring our own professional HEPA-filter vacuums, microfiber mop systems, squeegees,
+                and eco-friendly cleaning solutions. If you have specific specialty products you prefer for particular
+                surfaces (such as natural marble or heritage timber), we are happy to accommodate your request.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need to be home during the clean?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>It is entirely up to you. Many of our Perth clients provide access via lockbox or leave a key in a
+                secure spot while they are at work. Both Natasha and Laura are fully police cleared and insured,
+                providing complete peace of mind.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is included in the 100% Bond Back Guarantee?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>For Vacate Cleans, we clean strictly according to Real Estate Institute of Western Australia (REIWA)
+                standard property handover checklists. If your property manager flags any cleaning item within 72 hours
+                of inspection, we return promptly to rectify it free of charge.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do payments work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We do not require payment in advance on the website. Once your clean is completed and inspected, we
+                send an electronic tax invoice with simple bank transfer (EFT) details or secure PayID payment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is your cancellation policy?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We understand that life happens. We simply ask for at least 24 hours' notice if you need to reschedule
+                or pause your routine service so we can adjust our Perth travel schedule.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <img src="assets/cleanzen-logo-horizontal.svg" alt="Cleanzen Perth"
+            style="height: 48px; filter: brightness(0) invert(1);">
+          <p>
+            Boutique residential and vacate cleaning service based in Perth, Western Australia. Creating clean spaces
+            and calm minds since day one.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#estimator">Cost Estimator</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#about">About Natasha &amp; Laura</a></li>
+            <li><a href="#suburbs">Suburbs Covered</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h4 class="footer-title">Cleaning Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">General Domestic Clean</a></li>
+            <li><a href="#services">Weekly / Fortnightly Upkeep</a></li>
+            <li><a href="#services">Deep Reset Clean</a></li>
+            <li><a href="#services">Vacate &amp; Bond Clean</a></li>
+            <li><a href="#services">Window &amp; Glass Clean</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Hours -->
+        <div>
+          <h4 class="footer-title">Contact Cleanzen</h4>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <a href="tel:0421081962">0421 081 962</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <a href="mailto:cleanzen.info@gmail.com">cleanzen.info@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Perth, Western Australia</span>
+          </div>
+          <div class="footer-contact-item" style="margin-top: 1rem;">
+            <span>⏰</span>
+            <span>Mon – Sat: 7:30 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 BrtzDesigns. All rights reserved &reg;. Owned and operated by Natasha & Laura in Perth, WA.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#hero">Privacy Policy</a>
+          <a href="#hero">Terms of Service</a>
+          <a href="#booking">Book Clean</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Configuration (Excluded from git if private) -->
+  <script src="js/config.js"></script>
+  <!-- Application Logic -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

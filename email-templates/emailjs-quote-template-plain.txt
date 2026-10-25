@@ -1,0 +1,28 @@
+New Cleanzen Quote Request Received!
+=====================================
+
+ESTIMATED PRICE: {{estimated_price}} AUD
+(No upfront deposit taken)
+
+CLIENT DETAILS:
+- Full Name: {{client_name}}
+- Phone: {{client_phone}}
+- Email: {{client_email}}
+- Perth Suburb: {{client_suburb}}
+
+SERVICE CONFIGURATION:
+- Service Type: {{service_type}}
+- Home Size: {{bedrooms}} Bedrooms, {{bathrooms}} Bathrooms
+- Frequency: {{frequency}}
+- Extras: {{extras}}
+
+PREFERRED SCHEDULE:
+- Date: {{preferred_date}}
+- Preferred Time Slot: {{preferred_time_slot}}
+- Special Instructions / Notes:
+  {{notes}}
+
+=====================================
+Cleanzen Perth • Natasha & Laura
+Phone: 0421 081 962
+Email: cleanzen.info@gmail.com

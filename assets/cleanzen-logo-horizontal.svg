@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <g id="sparkle-star-dark">
+      <path d="M 0,-8 Q 0,0 8,0 Q 0,0 0,8 Q 0,0 -8,0 Q 0,0 0,-8 Z" fill="#6B9AC4" />
+    </g>
+  </defs>
+
+  <!-- Left Icon Group -->
+  <g transform="translate(10, 5)">
+    <!-- Meditator Figure in Deep Ocean Navy / Accent Blue -->
+    <g fill="none" stroke="#1E3A5F" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Halo -->
+      <path d="M 47,24 C 47,15 67,15 67,24" stroke-width="4.5" stroke="#6B9AC4" />
+      <!-- Head -->
+      <circle cx="57" cy="35" r="9.5" fill="#1E3A5F" stroke="none" />
+      <!-- Arms -->
+      <path d="M 28,62 L 28,68 C 28,78 41,80 52,73 C 54,71 60,71 62,73 C 73,80 86,78 86,68 L 86,62" stroke-width="5" />
+      <path d="M 39,66 C 45,55 51,52 57,52 C 63,52 69,55 75,66" stroke-width="5" />
+
+      <!-- Lotus Legs -->
+      <path d="M 57,80 C 42,72 20,83 32,97 C 41,107 55,95 57,88 Z" fill="#1E3A5F" stroke="none" />
+      <path d="M 57,80 C 72,72 94,83 82,97 C 73,107 59,95 57,88 Z" fill="#1E3A5F" stroke="none" />
+      <path d="M 43,92 C 51,99 63,99 71,92" stroke-width="3" stroke="#FFFFFF" />
+
+      <!-- Left Tool: Duster -->
+      <g transform="translate(28, 54)">
+        <line x1="0" y1="8" x2="0" y2="-6" stroke-width="4.5" stroke="#1E3A5F" />
+        <path d="M -10,-6 L 10,-6 L 8,-11 L -8,-11 Z" fill="#6B9AC4" stroke="none" />
+        <path d="M -8,-11 C -8,-18 -5,-22 -6,-25 L 6,-25 C 5,-22 8,-18 8,-11 Z" fill="#6B9AC4" stroke="none" />
+      </g>
+
+      <!-- Right Tool: Wiper Squeegee -->
+      <g transform="translate(86, 54)">
+        <line x1="0" y1="8" x2="0" y2="-8" stroke-width="4.5" stroke="#1E3A5F" />
+        <rect x="-13" y="-12" width="26" height="4" rx="1.5" fill="#6B9AC4" stroke="none" />
+      </g>
+    </g>
+
+    <!-- Sparkles -->
+    <use href="#sparkle-star-dark" x="16" y="28" transform="scale(0.8)" />
+    <use href="#sparkle-star-dark" x="98" y="28" transform="scale(0.8)" />
+  </g>
+
+  <!-- Typography Right Side -->
+  <text x="145" y="62" 
+        font-family="'Playfair Display', 'Cormorant Garamond', 'Georgia', serif" 
+        font-size="44" 
+        font-weight="600" 
+        fill="#1E3A5F">Cleanzen</text>
+
+  <!-- Subtitle: Natasha & Laura | Perth, WA -->
+  <text x="148" y="85" 
+        font-family="'Plus Jakarta Sans', 'Outfit', sans-serif" 
+        font-size="12" 
+        font-weight="600" 
+        letter-spacing="3" 
+        fill="#6B9AC4">NATASHA &amp; LAURA  •  PERTH, WA</text>
+
+  <!-- Small Tagline Accent -->
+  <text x="148" y="102" 
+        font-family="'Plus Jakarta Sans', sans-serif" 
+        font-size="10" 
+        font-weight="500" 
+        letter-spacing="1.5" 
+        fill="#5F738A">CLEAN SPACE, CALM MIND</text>
+</svg>

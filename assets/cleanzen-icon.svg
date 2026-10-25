@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <!-- Sparkle Definition -->
+    <g id="sparkle-star">
+      <path d="M 0,-14 Q 0,0 14,0 Q 0,0 0,14 Q 0,0 -14,0 Q 0,0 0,-14 Z" fill="#FFFFFF" />
+    </g>
+    <g id="small-sparkle">
+      <path d="M 0,-8 Q 0,0 8,0 Q 0,0 0,8 Q 0,0 -8,0 Q 0,0 0,-8 Z" fill="#FFFFFF" opacity="0.85" />
+    </g>
+  </defs>
+
+  <!-- Background Soft Radial Glow (Optional/Transparent Compatible) -->
+  <rect width="300" height="300" fill="none" />
+
+  <!-- SPARKLES AROUND FIGURE -->
+  <!-- Top Left Sparkles -->
+  <use href="#sparkle-star" x="80" y="88" transform="scale(0.85) translate(14, 15)" />
+  <use href="#small-sparkle" x="65" y="105" />
+  
+  <!-- Top Right Sparkles -->
+  <use href="#sparkle-star" x="220" y="88" transform="scale(0.85) translate(-10, 15)" />
+  <use href="#small-sparkle" x="235" y="115" />
+
+  <!-- ZEN MEDITATOR FIGURE -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Topknot / Head Arch Halo -->
+    <path d="M 132,82 C 132,66 168,66 168,82" stroke-width="8" />
+    
+    <!-- Head Circle -->
+    <circle cx="150" cy="104" r="17" fill="#FFFFFF" stroke="none" />
+
+    <!-- Arms & Shoulders Flowing Path -->
+    <!-- Shoulders curving down then bending up into hands -->
+    <path d="M 98,155 L 98,168 C 98,186 122,188 142,176 C 146,173 154,173 158,176 C 178,188 202,186 202,168 L 202,155" stroke-width="9" />
+    <path d="M 118,162 C 128,142 140,136 150,136 C 160,136 172,142 182,162" stroke-width="9" />
+
+    <!-- Lotus Pose Crossed Legs -->
+    <!-- Left Leg Loop -->
+    <path d="M 150,192 C 125,178 88,198 108,222 C 124,240 148,218 150,206 Z" fill="#FFFFFF" stroke="none" opacity="0.95" />
+    <!-- Right Leg Loop -->
+    <path d="M 150,192 C 175,178 212,198 192,222 C 176,240 152,218 150,206 Z" fill="#FFFFFF" stroke="none" opacity="0.95" />
+    <!-- Inner Lotus Negative Arc -->
+    <path d="M 125,212 C 140,224 160,224 175,212" stroke-width="6" stroke="#6B9AC4" />
+
+    <!-- CLEANING TOOLS -->
+    <!-- Left Tool (Viewer's Left): Duster / Brush -->
+    <g transform="translate(98, 142)">
+      <!-- Brush Handle in Hand -->
+      <line x1="0" y1="13" x2="0" y2="-12" stroke-width="8" stroke="#FFFFFF" />
+      <!-- Brush Base Block -->
+      <path d="M -18,-12 L 18,-12 L 15,-20 L -15,-20 Z" fill="#FFFFFF" stroke="none" />
+      <!-- Brush Bristles -->
+      <path d="M -15,-20 C -15,-32 -10,-38 -12,-44 L -4,-44 L -3,-20 M -3,-20 C -2,-38 2,-38 3,-20 M 3,-20 L 4,-44 L 12,-44 C 10,-38 15,-32 15,-20 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" />
+    </g>
+
+    <!-- Right Tool (Viewer's Right): Window Wiper / Squeegee -->
+    <g transform="translate(202, 142)">
+      <!-- Wiper Handle -->
+      <line x1="0" y1="13" x2="0" y2="-15" stroke-width="8" stroke="#FFFFFF" />
+      <!-- Wiper Horizontal Blade Head -->
+      <rect x="-24" y="-22" width="48" height="7" rx="3" fill="#FFFFFF" stroke="none" />
+      <!-- Wiper Blade Edge -->
+      <rect x="-21" y="-26" width="42" height="4" rx="2" fill="#FFFFFF" opacity="0.8" stroke="none" />
+    </g>
+  </g>
+</svg>
